@@ -1,0 +1,77 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    padding: 8px;
+    position: relative;
+}
+
+.mrsmarfixed{
+    width: 50px;
+    height: 88px;
+    position: fixed;
+    background: red;
+    right: 3px;
+    top: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid red;
+    
+
+}
+
+.mrsmarfixed button{
+    width: 100%;
+    height: auto;border:none;
+    outline: none;
+    cursor: pointer;
+    padding: 3px;
+    margin-bottom: 5px;
+
+}
+.mrlsmartphonetable input{
+    width: 100%;
+    padding: 5px;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+.mrlsmartphonetable h6{
+    font-size: 15px;
+}
+
+.mrlaboratorytable{
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+    border-collapse:separate;
+    
+   
+}
+.mrlaboratorytable thead{
+    
+}
+.mrlaboratorytable tr, .mrlaboratorytable td{
+    border: 2px solid red;
+    padding:7px;
+    border-collapse:separate;
+}
+.mrlaboratorytable th{
+    font-size: 30px;
+}
+
+.smartoutput{
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 8px;
+}
+.smartoutput textarea{
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+}
