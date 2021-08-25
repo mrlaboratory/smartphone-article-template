@@ -20,6 +20,14 @@ for(var i = 0, len = g.length; i < len; i++){
 //     alert("ok");
 // })
 
+
+
+$(".mrsmarfixed button:eq(0)").on("click",function(){ 
+    for (var i = 0, len = g.length; i < len; i++){
+        $(".mrlsmartphonetable input:eq("+i+")").val("");
+    }
+});
+
 var sphonename = $(".mrlsmartphonetable input:eq(0)").val();
 $(".mrsmarfixed button:eq(0)").on("click",function(){ 
     var smartdata="";
