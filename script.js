@@ -22,7 +22,7 @@ for(var i = 0, len = g.length; i < len; i++){
 
 
 
-$(".mrsmarfixed button:eq(0)").on("click",function(){ 
+$(".mrsmarfixed button:eq(1)").on("click",function(){ 
     for (var i = 0, len = g.length; i < len; i++){
         $(".mrlsmartphonetable input:eq("+i+")").val("");
     }
