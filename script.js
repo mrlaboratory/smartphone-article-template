@@ -78,7 +78,7 @@ var mran19 =sphonename+" "+$(".smtbl input:eq(21)").val()+" USB Type-C";
 var mrqn20 ="Which sensor is used in "+sphonename+"?";
 var mran20 ="The "+sphonename+" has "+$(".smtbl input:eq(33)").val()+" etc sensor";
 
-
+var thumpimg ="<img src='"+$('.thumbimg').val()+"' width='100%' height='auto' title='"+sphonename+"image' alt='"+sphonename+"image'/>";
 
 var qnamralldeta = [ {"qa":mrqn1,"an":mran1}, {"qa":mrqn2,"an":mran2}, {"qa":mrqn3,"an":mran3},  {"qa":mrqn4,"an":mran4}, {"qa":mrqn5,"an":mran5}, {"qa":mrqn6,"an":mran6}, {"qa":mrqn7,"an":mran7}, {"qa":mrqn8,"an":mran8}, {"qa":mrqn9,"an":mran9}, {"qa":mrqn10,"an":mran10}, {"qa":mrqn11,"an":mran11}, {"qa":mrqn12,"an":mran12},
     {"qa":mrqn13,"an":mran13},{"qa":mrqn14,"an":mran14},{"qa":mrqn15,"an":mran15},{"qa":mrqn16,"an":mran16},{"qa":mrqn17,"an":mran17},{"qa":mrqn18,"an":mran18}, {"qa":mrqn19,"an":mran19},{"qa":mrqn20,"an":mran20},
@@ -95,7 +95,7 @@ for(var mr=0;mr<qnamralldeta.length;mr++){
 qnamakermrl1 +='{ "@type": "Question",  "name": "who is the owner of mr laboratory ? ", "acceptedAnswer": {  "@type": "Answer",  "text": "<b> MR Laboratory</b> is founded by <b>Md Mijanur Rahamn</b> in 2018, and still <strong>Md Mijanur Rahaman</strong> is owner of <strong>MR Laboratory</strong>. " } } ] } </script>';
 var mainschema = '<script type="application/ld+json"> { "@context": "https://schema.org/", "@type": "Review",  "itemReviewed": { "@type": "Product", "name": "'+sphonename+'", "review": { "@type": "Review", "author": { "@type": "Person",  "name": "MR Laboratory" },  "inLanguage": "en"	 }, "image": {  "@type": "ImageObject", "url": "<data:blog.postImageThumbnailUrl/>", "height":"700",  "width": "1280" } }, "name": "'+sphonename+' long-term review", "author": {  "@type": "Person",  "name": "MR Laboratory" }, "datePublished": "<data:post.timestamp/>" }</script>'
 
-   $(".smartoutput textarea").val(smarttext+smartdata+mainschema+moresmrtdata+smtvurl+qnamakermrl1+qnamakermrl2)
+   $(".smartoutput textarea").val(thumpimg+smarttext+smartdata+mainschema+moresmrtdata+smtvurl+qnamakermrl1+qnamakermrl2)
     $("body").append(); 
 })
 
