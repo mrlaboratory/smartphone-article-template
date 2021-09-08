@@ -102,7 +102,7 @@ for(var mr=0;mr<qnamralldeta.length;mr++){
 qnamakermrl1 +='{ "@type": "Question",  "name": "who is the owner of mr laboratory ? ", "acceptedAnswer": {  "@type": "Answer",  "text": "<b> MR Laboratory</b> is founded by <b>Md Mijanur Rahamn</b> in 2018, and still <strong>Md Mijanur Rahaman</strong> is owner of <strong>MR Laboratory</strong>. " } } ] } </script>';
 var mainschema = '<script type="application/ld+json"> { "@context": "https://schema.org/", "@type": "Review",  "itemReviewed": { "@type": "Product", "name": "'+sphonename+'", "review": { "@type": "Review", "author": { "@type": "Person",  "name": "MR Laboratory" },  "inLanguage": "en"	 }, "image": {  "@type": "ImageObject", "url": "<data:blog.postImageThumbnailUrl/>", "height":"700",  "width": "1280" } }, "name": "'+sphonename+' long-term review", "author": {  "@type": "Person",  "name": "MR Laboratory" }, "datePublished": "<data:post.timestamp/>" }</script>'
 
-   $(".smartoutput textarea").val(thumpimg+smarttext+smartdata+mainschema+moresmrtdata+smtvurl+qnamakermrl1+qnamakermrl2)
+   $(".smartoutput textarea").val(thumpimg+smarttext+smartdata+mainschema+moresmrtdata+smtvurl+qnamakermrl1+qnamakermrl2+"<style>:root{--bgcolor:black;}.mrlaboratorytable{border:1px solid var(--bgcolor);width:100%;height:auto;border-collapse:separate}.mrlaboratorytable caption{text-align:center;border-top:1px solid var(--bgcolor);font-size:20px;font-weight:700}.mrlaboratorytable td,.mrlaboratorytable tr{border:1px solid var(--bgcolor);padding:7px;border-collapse:separate;font-family:'Font Awesome 5 Pro'}.mrlaboratorytable th{font-size:20px;font-family:Oswald;text-align:center}</style>")
     $("body").append(); 
 })
 
