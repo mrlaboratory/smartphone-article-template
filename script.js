@@ -1,4 +1,6 @@
 // alert("worked");
+//<![CDATA[
+
 var g = $(".smtbl input");
 for (var i = 0, len = g.length; i < len; i++)
 {
@@ -22,7 +24,12 @@ for(var i = 0, len = g.length; i < len; i++){
 $(".mrsmarfixed button:eq(1)").on("click",function(){ 
     for (var i = 0, len = g.length; i < len; i++){
         $(".smtbl input:eq("+i+")").val("");
-    }
+    } 
+for(var i = 0, len = g.length; i < len; i++){
+localStorage.removeItem(('articleform'+i));
+}
+
+
 });
 var sphonename = $(".smtbl input:eq(0)").val();
 $(".mrsmarfixed button:eq(0)").on("click",function(){ 
@@ -78,7 +85,7 @@ var mran19 =sphonename+" "+$(".smtbl input:eq(21)").val()+" USB Type-C";
 var mrqn20 ="Which sensor is used in "+sphonename+"?";
 var mran20 ="The "+sphonename+" has "+$(".smtbl input:eq(33)").val()+" etc sensor";
 
-var thumpimg ="<img src='"+$('.thumbimg').val()+"' width='50%' style='align-item: center;' height='auto' title='"+sphonename+"image' alt='"+sphonename+"image'/>";
+var thumpimg ="<img src='"+$('.thumbimg').val()+"' width='100%' height='auto' title='"+sphonename+"image' alt='"+sphonename+"image'/>";
 
 var qnamralldeta = [ {"qa":mrqn1,"an":mran1}, {"qa":mrqn2,"an":mran2}, {"qa":mrqn3,"an":mran3},  {"qa":mrqn4,"an":mran4}, {"qa":mrqn5,"an":mran5}, {"qa":mrqn6,"an":mran6}, {"qa":mrqn7,"an":mran7}, {"qa":mrqn8,"an":mran8}, {"qa":mrqn9,"an":mran9}, {"qa":mrqn10,"an":mran10}, {"qa":mrqn11,"an":mran11}, {"qa":mrqn12,"an":mran12},
     {"qa":mrqn13,"an":mran13},{"qa":mrqn14,"an":mran14},{"qa":mrqn15,"an":mran15},{"qa":mrqn16,"an":mran16},{"qa":mrqn17,"an":mran17},{"qa":mrqn18,"an":mran18}, {"qa":mrqn19,"an":mran19},{"qa":mrqn20,"an":mran20},
@@ -112,3 +119,4 @@ function anajhonmkr(q,a){
         var qna = '{ "@type": "Question",  "name": "'+q+'", "acceptedAnswer": {  "@type": "Answer",  "text": "'+a+'" } },'
         return qna;
      }
+         //]]>
